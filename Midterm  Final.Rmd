@@ -1,0 +1,37 @@
+---
+title: "Mid Term Project Final"
+author: "Lucas Steltenpohl"
+date: "2023-03-30"
+output: html_document
+---
+
+# Toronto Raptors
+
+```{r, include= FALSE, warning = FALSE, echo=FALSE, messages = FALSE}
+# Code
+ source("~/.active-rstudio-document") 
+```
+
+```{r, fig.height = 10, fig.width= 8, fig.align = 'center', warning=FALSE, echo=FALSE}
+chart23yr %>% animate(nframes = 24, fps= .5)
+```
+
+## Major Takeaways
+
+-   The mid-range shot range became less prevalent
+-   Total shot attempts and field goal percentage have remained relatively unchanged
+-   Three-point shot has gained popularity in recent years
+
+```{r, fig.height = 10, fig.width = 8, fig.align = 'center', warning = FALSE, echo = FALSE}
+midRange_graph
+threes_graph
+fieldGoalPercentage_graph
+shotAttempts_graph
+```
+
+## Analysis
+
+-   The shot chart animation from progressing from 1997-2020 for the Toronto Raptors displays a less concentrated number of shots in the mid-range causing more white space to be seen. Additionally, it is more evident to see this by looking at the bar graph on the total number of mid-range shots taken. It is blatant that since the peak of mid-range shots taken in season 2000 that the amount of mid-range shots attempted has been steadily decreasing until 2020. However, the COVID season data in 2020 creates an illusion of a rapid decrease that should be overlooked. This could be a result of the popularity gain of shooting threes also factoring in the risk-to-reward ratio of shooting mid-range vs threes.
+-   As previously mentioned, the decrease in mid-range shots taken has led to a substantial increase in the total number of threes taken. As displayed by the "Total Threes Per Year" graphic above it is transparent that since 2012 the Raptors have increased their number of threes taken greatly. Especially from 2017-2020 despite 2020 being a season with limited games. Many account this increase to be from a phenomenon called the "Steph Curry Effect". This psychological effect gained popularity after the 2014-2015 season when Stephen Curry won MVP in addition to winning the NBA Finals. This corresponds directly to the "Total Threes Per Year" bar graph in which the number of threes taken per season has increased by an increasing rate in the majority of years since this time frame.
+-   Although the shot types have progressively changed over the years the total number of shots taken each year has remained relatively constant. The "Total Shots Per Year" visual shows that the range of shots has buffered between 6,500-7,000 per year. With the exception of the 1999 season when the NBA experienced a lockout causing a substantial decrease in the number of games played. There is a noticeable increase in total shots taken from 2016-2020. This could be accounted for by a new NBA rule addition implemented in 2018 called the "Freedom of Movement". This rule grants players more offensive separation causing an influx of scoring and number of possessions per game.
+-   After taking an in-depth look to see if there is a correlation between field goal percentage and season record/outcome it is found that this metric does not play a large contribution to success. For example, you would anticipate the 2018-2019 season field goal percentage to be higher than other years since the Toronto Raptors won the NBA Finals that year. However, this is not the case as seen in the "Raptors Field Goal Percentage By Season" graph there was a small increase in field goal percentage in the 2018-2019 seasons, but nothing substantial to note. Correspondingly, the 2010 season which is the highest field goal percentage at 48.24% resulted in their worst season by record at 22-60.
